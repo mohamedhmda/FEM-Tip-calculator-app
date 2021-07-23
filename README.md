@@ -30,7 +30,7 @@ Users should be able to:
 ![desktop](./screenshots/desktop.png)
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/mohamedhmda/FEM-Tip-calculator-app)
+- Solution URL: [solution URL](https://github.com/mohamedhmda/FEM-Tip-calculator-app)
 
 ## My process
 
