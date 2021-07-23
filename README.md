@@ -30,7 +30,7 @@ Users should be able to:
 ![desktop](./screenshots/desktop.png)
 ### Links
 
-- Solution URL: [solution URL](https://github.com/mohamedhmda/FEM-Tip-calculator-app)
+- View Live: [Link](https://sharp-mahavira-810f69.netlify.app/)
 
 ## My process
 
