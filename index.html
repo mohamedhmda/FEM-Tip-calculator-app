@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="/static/style.css">
+
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img src="images/logo.svg" alt="Spliter logo">
+  </header>
+  <main>
+    <form>
+      <div class="inputs">
+        <label for="bill">Bill</label>
+        <span class="input-container">
+          <img src="images/icon-dollar.svg" alt="$">
+          <input type="number" name="bill" id="bill" placeholder="0">
+        </span>
+      </div>
+
+      <div class="inputs tip-input">
+        <!-- turn to radio button -->
+        <input class="checkbox-tip" type="radio" name="tip" id="tip-5" value="5">
+        <label for="tip-5"><span>5%</span></label>
+
+        <input class="checkbox-tip" type="radio" name="tip" id="tip-10" value="10">
+        <label for="tip-10"><span>10%</span></label>
+
+        <input class="checkbox-tip" type="radio" name="tip" id="tip-15" value="15">
+        <label for="tip-15"><span>15%</span></label>
+
+        <input class="checkbox-tip" type="radio" name="tip" id="tip-20" value="20">
+        <label for="tip-20"><span>20%</span></label>
+
+        <input class="checkbox-tip" type="radio" name="tip" id="tip-25" value="25">
+        <label for="tip-25"><span>25%</span></label>
+
+        <input class="checkbox-tip" type="radio" name="tip" id="tip-custom" value="0" checked>
+        <label for="tip-custom" class="tip-custom"><input type="number" name="custom" id="custom"
+            placeholder="Custom"></label>
+
+      </div>
+
+      <div class="inputs">
+        <div class="labels">
+          <label for="people">Number of People</label>
+          <div class="cant_be_zero">Can't be zero</div>
+        </div>
+        <span class="input-container">
+          <img src="images/icon-person.svg" alt="icon person">
+          <input type="number" name="people" id="people" placeholder="0">
+        </span>
+      </div>
+    </form>
+
+    <div class="total">
+      <div class="amount tip-amount">
+        <div class="label">
+          <span class="label-head">Tip Amount</span>
+          <span>/ person</span>
+        </div>
+        <div class="price">
+          <span id="tip-by-person">$0.00</span>
+        </div>
+      </div>
+      <div class="amount total-amount">
+        <div class="label">
+          <span class="label-head">Total</span>
+          <span>/ person</span>
+        </div>
+        <div class="price">
+          <span id="total-price">$0.00</span>
+        </div>
+      </div>
+      <button class="btn" id="reset-btn">Reset</button>
+    </div>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Hamaida Mohamed Amine</a>.
+  </div>
+
+  <script src="static/app.js"></script>
+</body>
+
+</html>
